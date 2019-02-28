@@ -1,2 +1,10 @@
-.sass-cache/
-*.css.map
+node_modules/
+dist/
+lib/
+*.log
+*.sublime-project
+
+*.sublime-workspace
+.composer.phar
+
+*.sublime-gulp.cache

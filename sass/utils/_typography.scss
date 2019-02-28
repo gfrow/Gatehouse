@@ -1,0 +1,127 @@
+/**
+ *  TYPOGRAPHY
+ */
+
+
+
+body {
+  color: $c-body;
+  font-family: $ff-body;
+  font-size: $fz-body;
+  font-weight: $fw-body;
+  line-height: $lh-body;
+}
+
+a {
+  color: $c-link;
+  text-decoration: none;
+
+  &:hover {
+    color: $c-link-hover;
+  }
+
+  &:focus {
+    color: $gh-primary;
+  }
+}
+
+
+// Sizes
+.text {
+  &-huge, &-big, &-medium {
+    margin-bottom: 1em;
+  }
+
+  &-huge {
+    font-size: $hd-giant;
+    line-height: $lh-huge;
+  }
+
+  &-big {
+    font-size: $hd-huge;
+    line-height: $lh-big;
+  }
+
+  &-medium {
+    font-size: $hd-reg;
+    line-height: $lh-medium;
+  }
+
+  &-small {
+    font-size: $hd-small;
+    line-height: $lh-small;
+  }
+
+  // set default font state.
+  &-body {
+    font-size: $fz-body;
+    line-height: $lh-body;
+  }
+}
+
+// Colors
+.text {
+  @each $type, $color in $c-map {
+    &-#{$type} {
+      color: $color;
+    }
+  }
+}
+
+// Styles
+.text-light {
+  font-weight: $fw-light;
+}
+
+.text-normal {
+  font-weight: $fw-normal;
+}
+
+.txt-line {
+  text-decoration: line-through;
+}
+
+.txt-ital {
+  font-style: italic;
+}
+
+.txt-under {
+  text-decoration: underline;
+}
+
+.txt-upper {
+  text-transform: uppercase;
+}
+
+// titles after titles Subtitles
+.txt-sub {
+  margin-bottom: 0 !important;
+
+  + .text-huge,
+  + .text-big,
+  + .text-medium,
+  + .text-small, {
+    margin-top: .5em;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: $fw-headings;
+}
+
+
+// Aligners
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}

@@ -1,0 +1,294 @@
+/**
+ *  SETTINGS
+ */
+
+$enable-grid-classes: true !default; // generate grid classes
+$enable-reset-defaults: true !default; // reset default browser values
+
+
+// colors
+
+
+
+$gh-xdark:     #0f1f18 !default; //Extra dark
+$gh-2dark:     #161819 !default; //Extra dark alt.
+$gh-dgray:     #393d3f !default; //dark gray
+$gh-lgray:     #555a5c !default; //light gray
+$gh-xgray:     #72787b !default; //extra light gray
+$gh-ulight:     #ccd4d8 !default; //ultra-light
+$ghUlight:     #e4e8ea !default;
+$gh-swhite:     #f2f2f2 !default; //system-white
+
+//Same as Bootstrap naming conventions
+$gh-primary: #3381c3 !default; //Primary color
+$gh-secondary: #7fb5e1 !default; //secondary/complimentary color
+$gh-success: #7fb5e1 !default; //Success
+$gh-warning: #ffcd35 !default; // Warning
+$gh-info: #f06600 !default; //Information
+$gh-muted: #e9e9e9 !default; //muted
+$gh-danger: #ff4c00 !default; //Danger
+$gh-dark: #393d3f !default; //Dark
+$gh-light: #ccd4d8 !default; //light
+$gh-white: #ffffff !default; //Actual white
+
+$gh-text: #272727 !default;
+$c-light: $gh-ulight !default;
+$c-link: $gh-primary !default;
+$c-link-hover: rgba($gh-primary, .8) !default;
+$bgc-body: $gh-swhite !default;
+
+$c-map: (
+'extra-dark':     $gh-xdark,
+'too-dark':       $gh-2dark,
+'dark-gray':      $gh-dgray,
+'light-gray':     $gh-lgray,
+'xl-gray':        $gh-xgray,
+'ultra-light':    $gh-ulight,
+'system-white':   $gh-swhite,
+'primary':        $gh-primary,
+'secondary':      $gh-secondary,
+'success':        $gh-success,
+'warning':        $gh-warning,
+'info':           $gh-info,
+'muted':          $gh-muted,
+'danger':         $gh-danger,
+'dark':           $gh-dark,
+'light ':         $gh-light,
+'white ':         $gh-white,
+
+   ) !default;
+
+
+// Social media colors
+$gh-fb: rgb(59, 89, 182) !default;
+$gh-tw: rgb(64, 153, 255) !default;
+$gh-googleplus: rgb(215, 61, 50) !default;
+$gh-pinterest: rgb(203, 32, 39) !default;
+$gh-skype: rgb(18, 165, 244) !default;
+$gh-spotify: rgb(129, 183, 26) !default;
+$gh-instagram: #4e433c !default;
+$gh-tumblr: #2b4964 !default;
+$gh-vimeo: #86b32d !default;
+$gh-soundcloud: #f76600 !default;
+$gh-youtube: #ff3333 !default;
+$gh-linkedin: #4875b4 !default;
+$gh-flickr: #fe0883 !default;
+$gh-foursquare: #8fd400 !default;
+
+
+// Shadows
+$bx-shad-base:  0 10 5px rgba(0, 0, 0, .2) !default;
+$bx-shad-med:  $bx-shad-base !default;
+
+// Typography
+$fw-light: 800 !default;
+$fw-normal: 400 !default;
+$fw-bold: 900 !default;
+$fw-headings: $fw-light !default;
+
+$ff-base: 'Pt Sans', sans-serif !default;
+$fw-base: 400 !default;
+$fz-base: 16px !default;
+$lh-base: 1.5em !default;
+
+$hd-giant: 54px !default;
+$hd-huge: 36px !default;
+$hd-large: 28px !default;
+$hd-med: 36px !default;
+$hd-reg: $fz-base !default;
+$hd-small: 12px !default;
+
+$lh-huge: 1.3em !default;
+$lh-big: 1.3em !default;
+$lh-medium: $lh-base !default;
+$lh-small: 1.3em !default;
+
+// Body
+$c-body: $gh-text !default;
+$ff-body: $ff-base !default;
+$fz-body: $fz-base !default;
+$fw-body: $fw-base !default;
+$lh-body: $lh-base !default;
+
+// Border
+$bdc-base: $gh-primary !default;
+$bd-medium: 1px solid $bdc-base !default;
+$bdr-base: 3px !default;
+$bdr-medium: $bdr-base !default;
+$bdr-rounded-corners: 5px !default;
+
+// Defaults (HTML elements)
+$fw-strong: $fw-bold !default;
+$mb-p: 1.5em !default;
+$mb-ul: 1em !default;
+$mb-li: .5em !default;
+
+// Margin
+$m-xsmall: 4px !default;
+$m-small: 8px !default;
+$m-medium: 16px !default;
+$m-big: 36px !default;
+$m-huge: 48px !default;
+
+// Padding
+$p-small: 4px !default;
+$p-medium: 8px !default;
+$p-big: 16px !default;
+$p-huge: 36px !default;
+
+// Layout
+$bgc-container: transparent !default;
+$mwi-container: 1380px !default;
+$mwi-container-medium: 944px !default;
+$mwi-container-small: 400px !default;
+$w-gutter: 24px !default;
+
+// Grid
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$grid-columns: 12 !default;
+$grid-gutter-width: $w-gutter !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+/**
+ *  COMPONENTS
+ */
+
+// Badges
+$c-badge: $gh-text !default;
+$c-badge-colored: $gh-swhite !default;
+$bg-badge: $c-light !default;
+$bdr-badge: $bdr-medium !default;
+$lh-badge: 1.2em !default;
+$p-badge: $p-medium $p-big !default;
+$fz-badge-big: 1.3em !default;
+$fz-badge-small: .7em !default;
+$badges-color-map: (
+  'extra-dark':     $gh-xdark,
+  'too-dark':       $gh-2dark,
+  'dark-gray':      $gh-dgray,
+  'light-gray':     $gh-lgray,
+  'xl-gray':        $gh-xgray,
+  'ultra-light':    $gh-ulight,
+  'system-white':   $gh-swhite,
+  'primary':        $gh-primary,
+  'secondary':      $gh-secondary,
+  'success':        $gh-success,
+  'warning':        $gh-warning,
+  'info':           $gh-info,
+  'muted':          $gh-muted,
+  'danger':         $gh-danger,
+  'dark':           $gh-dark,
+  'light ':         $gh-light,
+  'white ':         $gh-white
+) !default;
+
+// Buttons
+$bg-button: $gh-primary !default;
+$c-button: $gh-swhite !default;
+$c-button-transparent: $gh-primary !default;
+$c-button-outlined: $gh-primary !default;
+$bdc-button: $bg-button !default;
+$bd-button: 1px solid $bdc-button !default;
+$bdr-button: 0px !default;
+$ff-button: $ff-body !default;
+$fz-button: $hd-reg !default;
+$fw-button: $fw-bold !default;
+$lh-button: $lh-body !default;
+$m-button: 0 $m-small $m-medium $m-small !default;
+$p-button: $p-medium $p-big !default;
+$tt-button: uppercase !default;
+
+$fz-button-big: $hd-huge !default;
+$p-button-big: $p-big $p-huge !default;
+
+$fz-button-small: $hd-small !default;
+$p-button-small: $p-small $p-big !default;
+
+// Forms
+$bgc-form: $c-light !default;
+$c-form: $gh-text !default;
+$bdr-form: $bdr-medium !default;
+$bd-form: $bd-medium !default;
+$fz-form: $fz-body !default;
+$bgc-form-focus: lighten($bgc-form, 5%) !default;
+$trs-form: background-color .2s ease-in-out !default;
+$c-form-placeholder: $gh-lgray !default;
+$mih-form-textarea: 120px !default;
+$p-form: $p-medium $p-big !default;
+$size-form-input-icon: 16px !default;
+$c-form-input-icon: $gh-lgray !default;
+$bd-form-error: 1px solid $gh-danger !default;
+$bgc-form-error: $bgc-form !default;
+
+// Loading bar
+$h-loading-bar: 6px !default;
+$w-loading-bar: 300px !default;
+$z-loading-bar: 1000 !default;
+
+// Loading spinner
+$bg-loading-spinner: $gh-secondary !default;
+$size-loading-spinner-inner: 9px !default;
+$size-loading-spinner: 30px !default;
+$z-loading-spinner: 1000 !default;
+
+// Notification
+$bdr-notification: $bdr-medium !default;
+$c-notification: $gh-swhite !default;
+$mb-notification: $m-big !default;
+$p-notification: $p-big !default;
+
+// Paginator
+$mr-paginator-item: $m-xsmall !default;
+$bdr-paginator-item: $bdr-medium !default;
+$bg-paginator-item: $c-light !default;
+$c-paginator-item: $gh-text !default;
+$bg-paginator-item-active: $gh-primary !default;
+$c-paginator-item-active: $gh-swhite !default;
+$p-paginator-item: $p-medium $p-big !default;
+
+// Table
+$bgc-table-header: $bgc-body !default;
+$bgc-table: $c-light !default;
+$bd-table: $bd-medium !default;
+$c-table-heading: $gh-lgray !default;
+$c-table-text: $gh-text !default;
+$fw-table-heading: normal !default;
+$mwi-table: 100% !default;
+$p-table-cell: $p-medium !default;
+$p-table-heading: $p-medium !default;
+$w-table: 100% !default;
+$fz-table-heading: $hd-small !default;
+
+// Tabs
+$bdb-tabs-item-selected: 3px solid $gh-primary !default;
+$bdb-tabs-item: 3px solid transparent !default;
+$bdb-tabs: $bd-medium !default;
+$c-tabs-item-hover: $gh-primary !default;
+$c-tabs-item-selected: $gh-primary !default;
+$c-tabs-item: $gh-lgray !default;
+$m-tabs-item: 0 $m-medium 0 0 !default;
+$miw-tabs-item: 70px !default;
+$p-tabs-item: $p-big !default;
+
+// Tags
+$bg-tag-dot: $bgc-body !default;
+$bg-tag: $c-light !default;
+$bdr-tag: $bdr-medium 0 0 $bdr-medium !default;
+$c-tag: $gh-text !default;
+$lh-tag: 16px !default;
+$m-tag: 0 $m-medium $m-medium 0 !default;
+$p-tag: $p-medium !default;
+$size-tag-dot: 5px !default;
