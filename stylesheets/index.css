@@ -52,7 +52,8 @@ body {
 /* line 19, ../sass/utils/_default.scss */
 p {
   font-weight: normal;
-  margin-bottom: 1.5em; }
+  /* margin-bottom: 1.5em; */
+ }
 
 /* line 24, ../sass/utils/_default.scss */
 img {
@@ -399,6 +400,9 @@ a {
   font-size: 36px;
   line-height: 1.3em; }
 /* line 45, ../sass/utils/_typography.scss */
+.text-large {
+  font-size: 24px;
+  line-height: 1.3em; }
 .text-medium {
   font-size: 16px;
   line-height: 1.5em; }
