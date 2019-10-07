@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&amp;display=swap">
+  <link rel="stylesheet" href="https://gh-static-resources.s3.amazonaws.com/consumer-marketing/theming/css/animate.css/animate.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gfrow/Gatehouse@master/stylesheets/index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #7FD2FB; /* Fallback color */
+  background-color: rgba(127,210,251,0.8); /* Blue w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: none;
+  margin: auto;
+  padding: 20px;
+  width: 40%;
+}
+
+/* The Close Button */
+.close {
+  color: #FFFFFF;
+  float:right;
+  font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* END MODAL STYLING */
+
+.container {
+  padding: 16px 0;
+  display:flex;
+}
+.embedded {
+  padding:8px;
+  color:#FFFFFF;
+}
+.flex-colummn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.right {
+  margin-left: auto;
+  font-size: 0 16px;
+}
+.text-hhuge {
+  font-size: 48px;
+  line-height: 1.2em;
+}
+.text-large {
+  font-size: 24px;
+  line-height: 1.2em;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.margin-8 {
+  margin: 8px 0;
+}
+.margin-16 {
+  margin: 16px 0;
+}
+.margin-24 {
+  margin: 24px 0;
+}
+.margin-32 {
+  margin: 32px 0;
+}
+.margin-0 {
+  margin: 0 auto;
+}
+
+.dbl-spacing {
+  letter-spacing: 3px;
+}
+.hlf-spacing {
+  letter-spacing: 1.5px;
+}
+.button {
+  text-align: center;
+  color: #ffffff !important;
+  background-color: #ff4c00;
+}
+.button:hover {
+  background-color: #bc3901;
+}
+input {
+  width:80%;
+  padding:16px;
+  font-size:16px;
+}
+</style>
+</head>
+<body>
+
+<h2>Modal Example</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p></p>
+    <div class="text-hhuge text-center text-white">VALUE PROPOSITION</div>
+    <div class="text-medium text-center text-white">A supporting statement about our amazing value proposition. </div>
+    <div class="notification--system-white text-center" style="padding:32px 0;">
+        <input type="name" class="form-control margin-8" placeholder="First Name"><br>
+        <input type="email" class="form-control margin-8" placeholder="Enter password">
+
+      <div><a class="button dbl-spafcing" href="#">Start Reading Now</a></div>
+      </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
