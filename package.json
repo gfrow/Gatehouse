@@ -37,7 +37,7 @@
     "cpx": "1",
     "cz-conventional-changelog": "2",
     "husky": "1",
-    "node-sass": "4",
+    "node-sass": "7",
     "nodemon": "1",
     "np": "3",
     "postcss-cli": "2"
